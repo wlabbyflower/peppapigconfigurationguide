@@ -1,8 +1,5 @@
 # 小猪佩奇配置指南
 
-[TOC]
-
-https://github.com/wlabby-1/PeppaPigConfigurationGuide
 
 ## 1、小猪佩奇软件
 
