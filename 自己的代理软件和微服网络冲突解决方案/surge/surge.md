@@ -2,6 +2,8 @@
 
 1、导入配置
 
+注意：Surge在本地网卡没有公共IPv6地址时，会禁用AAAA的DNS查询 访问微服依赖IPv6，会导致无法解析IPv6的地址
+
 打开surge——>点击更多——>点击模块——>选择从url模块——>这是会多一个分类选项——>勾选启用——>应用
 
 导入的url链接：[Lazycat.sgmodule](https://raw.githubusercontent.com/wlabby-1/PeppaPigConfigurationGuide/refs/heads/main/%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6%E5%92%8C%E5%BE%AE%E6%9C%8D%E7%BD%91%E7%BB%9C%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/surge/Lazycat.sgmodule)
