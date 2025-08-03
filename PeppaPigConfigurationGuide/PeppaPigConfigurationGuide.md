@@ -5,7 +5,7 @@
 
 在电脑终端下载小猪佩奇这个lpk文件
 
-[PeppaPig.lpk](https://github.com/wlabby/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/PeppaPig.lpk)
+[PeppaPig.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/PeppaPig.lpk)
 
 ![image-20250304170425630](https://gitee.com/wlabby/wlabby/raw/master/20250305222154109.png)
 

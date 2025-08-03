@@ -6,7 +6,7 @@
 
 打开surge——>点击更多——>点击模块——>选择从url模块——>这是会多一个分类选项——>勾选启用——>应用
 
-导入的url链接：[Lazycat.sgmodule](https://raw.githubusercontent.com/wlabby/peppapigconfigurationguide/refs/heads/main/自己的代理软件和微服网络冲突解决方案/surge/Lazycat.sgmodule)
+导入的url链接：[Lazycat.sgmodule](https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/自己的代理软件和微服网络冲突解决方案/surge/Lazycat.sgmodule)
 
 <img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/202506171621575.png" alt="image-20250617162111468" style="zoom:50%;" /> 
 
