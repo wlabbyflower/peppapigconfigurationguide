@@ -1,0 +1,65 @@
+{
+  "dns": {
+    "servers": [
+
+    ],
+    "rules": [
+    ],
+    "final": "google",
+    "independent_cache": true
+  },
+  "route": {
+    "default_domain_resolver": {
+      "server": "ali"
+    },
+    "rules": [
+      {
+        "rule_set": "lazy_cat",
+        "action": "route",
+        "outbound": "lazycat-socks"
+      },
+    ],
+    "rule_set": [
+      {
+        "tag": "lazy_cat",
+        "type": "inline",
+        "rules": [
+          {
+            "domain_suffix": [
+              ".heiyu.space",
+              ".lazycat.cloud",
+              ".lazycatmicroserver.com"
+            ]
+          }
+        ]
+      },
+    ],
+    "final": "final",
+    "auto_detect_interface": true
+  },
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "type": "selector",
+      "outbounds": [
+      ],
+      "default": "all-auto"
+    },
+    {
+      "tag": "google",
+      "type": "selector",
+      "outbounds": [
+      ],
+      "default": "proxy"
+    },
+    {
+      "type": "socks",
+      "tag": "lazycat-socks",
+      "server": "127.0.0.1",
+      "server_port": 31086,
+      "version": "5",
+      "network": "tcp",
+      "udp_over_tcp": false
+    },
+  ]
+}
