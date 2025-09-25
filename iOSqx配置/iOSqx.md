@@ -1,3 +1,7 @@
+
+
+需要先在客户端开启proxy模式——然后右上角设置——保活——开启后台保活或者定位保活
+
 <img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/0.jpg?imageSlim" alt="0" style="zoom:50%;" /> 
 
 <img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/1.jpg?imageSlim" alt="1" style="zoom:50%;" />  
