@@ -59,3 +59,46 @@ Clash for Windows 配置是一样的，但是Clash for Windows需要在主页勾
 注意！！！这个自动更新会定时向代理节点去拉取配置，取代修改的配置，这个自动更新可以点击关闭或者延长自动更新分钟
 
 ![image-20250401171801648](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/202506171600239.png)
+
+### 如果不想修改配置文件，也可以新增全局扩展脚本
+
+订阅——>右击全局扩展脚本，全清
+
+![image-20250926140153488](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20250926140153488.png?imageSlim)
+
+粘贴以下内容保存即可
+
+```javascript
+// Define main function (script entry)
+
+function main(config, profileName) {
+  const rule = 'DOMAIN-SUFFIX,heiyu.space,DIRECT';
+  const rule_cloud = 'DOMAIN-SUFFIX,cloud.lazycat,DIRECT';
+  // 确保 rules 存在
+  if (Array.isArray(config.rules)) {
+    config.rules.unshift(rule);
+    config.rules.unshift(rule_cloud)
+    config.rules.unshift('IP-CIDR,6.6.6.6/32,DIRECT');
+    config.rules.unshift('IP-CIDR,2000::6666/128,DIRECT');
+  } else {
+    config.rules = [
+      'IP-CIDR,2000::6666/128,DIRECT',
+      'IP-CIDR,6.6.6.6/32,DIRECT',
+      rule,
+      rule_cloud
+    ];
+  }
+
+  // 确保 DNS 配置存在
+  if (!config.dns) config.dns = {};
+  if (!config.dns['fake-ip-filter']) config.dns['fake-ip-filter'] = [];
+  if (!Array.isArray(config.dns['fake-ip-filter'])) config.dns['fake-ip-filter'] = [];
+
+  // heiyu.space 不使用 fake-ip
+  config.dns['fake-ip-filter'].push('+.heiyu.space');
+  config.dns['fake-ip-filter'].push('+.cloud.lazycat');
+
+  return config;
+}
+```
+
