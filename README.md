@@ -10,5 +10,7 @@
 4. iOS客户端参考视频：[iOS小火箭配置](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/iOS%E5%B0%8F%E7%81%AB%E7%AE%AD%E9%85%8D%E7%BD%AE/%E5%B0%8F%E7%81%AB%E7%AE%AD%E5%BC%80%E5%90%AF%E5%90%8E%E5%8F%AF%E4%BB%A5%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE.mp4)、[iOSsurge](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/iOSsurge配置/surge.mp4)、[stash](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/iOSstash%E9%85%8D%E7%BD%AE/stash.mp4)（其他说明：如果有直连影响，可以在“跳过路由”地方加两个IP：6.6.6.6/32   2000::6666/128
 5. Android客户端参考视频：[猫箱(nekobox)(媲美V2raya)](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/Android%E7%9A%84%E7%8C%AB%E7%AE%B1%EF%BC%88nekobox%EF%BC%89/nekobox.mp4)
 
+***声明:cat的客户端在iOS手机上会与原有的VPN存在冲突，cat客户端会有一个proxy模式，这样可以共存，以上配置大多数可以配置共存、直连；极个别：qx、loon这些应用一些配置没有开放，只能配置到共存，非直连***
+
 具体操作指南，请查看PDF
 
