@@ -1,15 +1,64 @@
+```bash
+#由于qx某些配置没有开放，目前只能配置共存，配置不了共存并直连，如果您有小火箭，这个更好配置
+```
 
+## cat的app侧的配置
 
-需要先在客户端开启proxy模式——然后右上角设置——保活——开启后台保活或者定位保活
+打开懒猫微服客户端登陆成功后
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/0.jpg?imageSlim" alt="0" style="zoom:50%;" /> 
+1. 在“我的”——微服管理——网络模式——选择proxy模式
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/1.jpg?imageSlim" alt="1" style="zoom:50%;" />  
+2. 点击“我点”——右上角设置齿轮——客户端保活——定位保活（可能会有些耗电）
+3. 配置完成之后把整个客户端从后台拉掉
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/2.jpg?imageSlim" alt="2" style="zoom:50%;" /> 
+## qx端配置
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/3.jpg?imageSlim" alt="3" style="zoom:50%;" /> 
+1、编辑配置文件
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/4716bc9cf263d06859069d2833b8c783.jpg?imageSlim" alt="4716bc9cf263d06859069d2833b8c783" style="zoom:50%;" /> 
+<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251117191627595.png?imageSlim" alt="image-20251117191627595" style="zoom:50%;" /> 
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/f94f7cdc024fa7666a29db9e5c6acc4e.jpg?imageSlim" alt="f94f7cdc024fa7666a29db9e5c6acc4e" style="zoom:50%;" /> 
+2、找到`[server local]`
+
+```yaml
+[server local]
+socks5=127.0.0.1:31086,fast-open=false,udp-relay=false,tag=lazycat
+```
+
+<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/050058e031a63ca35359a1c449bbf1b8.jpg?imageSlim" alt="050058e031a63ca35359a1c449bbf1b8" style="zoom:50%;" /> 
+
+3、找到 `[policy]`
+
+```
+[policyl
+static=lc,lazycat,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
+```
+
+<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/5bdd873afb5d354158cc7aca71d69632.jpg?imageSlim" alt="5bdd873afb5d354158cc7aca71d69632" style="zoom:50%;" /> 
+
+4、以上配置完成之后点有右上角√保存
+
+5、点击顶部“分流”——再点+号
+
+<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251117192612079.png?imageSlim" alt="image-20251117192612079" style="zoom:50%;" /> 
+
+6、新增一个分流规则
+
+```bash
+类型：HOST-WILDCARD
+参数：*.heiyu.space
+策略：lc
+```
+
+<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/05dcba4def3643897677fe8c1ba9be9a.jpg?imageSlim" alt="05dcba4def3643897677fe8c1ba9be9a" style="zoom:50%;" /> 
+
+7、配置完成之后保存
+
+8、点击右下角风车，运行模式选择规则分流
+
+ <img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251117193039424.png?imageSlim" alt="image-20251117193039424" style="zoom:50%;" /> 
+
+9、验证
+
+能运行cat的同时，还能科学上网
+
+<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/5d053ac11e5f074eb98f0fb2c91f33fd.jpg?imageSlim" alt="5d053ac11e5f074eb98f0fb2c91f33fd" style="zoom:50%;" /> 
