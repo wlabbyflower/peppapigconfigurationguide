@@ -7,55 +7,55 @@
 
 [PeppaPig.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/PeppaPig.lpk)
 
-![image-20250304170425630](https://gitee.com/wlabby/wlabby/raw/master/20250305222154109.png)
+![image-20250304170425630](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154109.png?imageSlim)
 
 ## 2、安装软件
 
 将下载好的lpk文件拖入懒猫网盘——>双击打开——>安装应用
 
-![image-20250304162456293](https://gitee.com/wlabby/wlabby/raw/master/20250305222154110.png)
+![image-20250304162456293](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154110.png?imageSlim)
 
 ## 3、注册登录
 
 点击微服终端上的应用——>打开小猪佩奇创建一个用户名和密码（记住自己的用户名和密码以便下次登陆！！！）
 
-![image-20250304152232040](https://gitee.com/wlabby/wlabby/raw/master/20250305222154111.png)
+![image-20250304152232040](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154111.png?imageSlim)
 
 ## 4、导入代理
 
 点击导入，导入代理的URL连接
 
-![image-20250304152338844](https://gitee.com/wlabby/wlabby/raw/master/20250305222154112.png)
+![image-20250304152338844](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154112.png?imageSlim)
 
 ## 5、导入后的配置
 
 导入成功后设置一下代理方式，点击右上角“设置”——>**透明代理/系统代理实现方式**选择“tproxy“——>保存并应用
 
-![image-20250304152949679](https://gitee.com/wlabby/wlabby/raw/master/20250305222154113.png)
+![image-20250304152949679](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154113.png?imageSlim)
 
 ## 6、开始使用
 
 选择一个节点点击连接——>点击左上角就绪——>左上角显示”正在运行“表明代理成功开启
 
-![image-20250304153147025](https://gitee.com/wlabby/wlabby/raw/master/20250305222154114.png)
+![image-20250304153147025](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154114.png?imageSlim)
 
 成功开启后勾选节点可以测试延迟
 
-![image-20250304153504263](https://gitee.com/wlabby/wlabby/raw/master/20250305222154115.png)
+![image-20250304153504263](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154115.png?imageSlim)
 
 ## 7、验证代理服务
 
 懒猫智慧屏可以打开YouTube
 
-<img src="https://gitee.com/wlabby/wlabby/raw/master/20250305222154116.png" alt="image-20250304160949850" style="zoom: 25%;" />    
+<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154116.png?imageSlim" alt="image-20250304160949850" style="zoom: 25%;" />    
 
 打开YouTube就能正常访问了
 
-![image-20250304161236738](https://gitee.com/wlabby/wlabby/raw/master/20250305222154117.png)
+![image-20250304161236738](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154117.png?imageSlim)
 
 通过开发者工具ssh进入 lzc-os 也可以正常访问Google
 
-![image-20250304160710628](https://gitee.com/wlabby/wlabby/raw/master/20250305222154118.png)
+![image-20250304160710628](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154118.png?imageSlim)
 
 ## 9、自己的代理软件和微服网络冲突解决方案:
 
