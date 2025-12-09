@@ -1,23 +1,31 @@
-## iOS端Loon与cat配置共存
+## iOS Loon 与懒猫微服共存配置
 
-此教程配置后，iOS能正常访问外网同时还可以浏览器访问cat的域名
+## 操作步骤
 
-#### 1、设置客户端保活，强烈建议“定位保护”
+#### 1. 打开 Loon，底部选择 **配置** → **高级配置**
+####    需要修改以下三项设置：
+- **IP Stack**
+- **绕过路由**
+- **代理模式**
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20250807162136737.png?imageSlim" alt="image-20250807162136737" style="zoom:67%;" /> 
+![配置截图](https://pic1.imgdb.cn/item/6936bc4a2a4ee13cb951c8cf.png) ![配置截图](https://pic1.imgdb.cn/item/6936bc4a2a4ee13cb951c8cd.png)
 
-#### 2、在主页节点添加一个名为lazycat的节点
+#### 3. **IP Stack 设置**
+- 点击 **IP Stack**
+- 更改查询模式为 **IPv4&IPv6**
+- **TUN IPV6** 配置为 **开启**
 
-![image-20250807163009404](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20250807163009404.png?imageSlim)
+![配置截图](https://pic1.imgdb.cn/item/6936bc4a2a4ee13cb951c8ce.png) ![配置截图](https://pic1.imgdb.cn/item/6936bc4a2a4ee13cb951c8d0.png)
 
-#### 3、配置规则
+#### 4. **绕过路由设置**
+- 返回上一级，选择 **绕过路由**
+- 添加以下地址：
+- **6.6.6.6/32,2000:6666/128**
 
-![image-20250807164335734](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20250807164335734.png?imageSlim)
+![配置截图](https://pic1.imgdb.cn/item/6936bc4a2a4ee13cb951c8cc.png)
 
-#### 4、高级配置
+#### 5. **懒猫微服设置**
+- 保存 Loon 配置后，在懒猫微服中的网络模式中，将 **VPN** 切换为 **Proxy**
+- **重启手机客户端即可直连**
 
-![image-20250807165301937](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20250807165301937.png?imageSlim)
-
-#### 6、验证成功
-
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/ccb6cedbc1f79d9732248b5fb6bef875.jpg?imageSlim" alt="ccb6cedbc1f79d9732248b5fb6bef875" style="zoom: 50%;" />  
+![配置截图](https://pic1.imgdb.cn/item/6936bc4a2a4ee13cb951c8d1.png)
