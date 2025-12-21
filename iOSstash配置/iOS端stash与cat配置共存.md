@@ -40,9 +40,15 @@
 
 分流规则：选择上一条配置的本地代理节点
 
-![image-20251124152315132](C:\Users\wangl\AppData\Roaming\Typora\typora-user-images\image-20251124152315132.png)
+![image-20251124152315132](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251124152315132.png?imageSlim)
 
-#### 4、验证
+#### 4、跳过路由
+
+设置——网络设置——跳过路由——新增：6.6.6.6/32   2000::6666/128
+
+![image-20251221143441923](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251221143441923.png?imageSlim)
+
+#### 5、验证
 
 ![e7ad1f687417c80817443d23ea982908](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/e7ad1f687417c80817443d23ea982908.jpg?imageSlim)
 
