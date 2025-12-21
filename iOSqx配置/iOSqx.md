@@ -1,7 +1,3 @@
-```bash
-#由于qx某些配置没有开放，目前只能配置共存，配置不了共存并直连，如果您有小火箭，这个更好配置
-```
-
 ## cat的app侧的配置
 
 打开懒猫微服客户端登陆成功后
@@ -20,11 +16,17 @@
 2、找到`[server local]`
 
 ```yaml
+socks5和http,任选其一（优先socks5）,或者都写
 [server local]
 socks5=127.0.0.1:31086,fast-open=false,udp-relay=false,tag=lazycat
+http=127.0.0.1:31085,fast-open=false,udp-relay=false,tag=lazycat
 ```
 
 <img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/050058e031a63ca35359a1c449bbf1b8.jpg?imageSlim" alt="050058e031a63ca35359a1c449bbf1b8" style="zoom:50%;" /> 
+
+同时注意下面的dns部分，不要有no-ipv6的配置
+
+<img src="https://pic1.imgdb.cn/item/69479b2f2bbc57ce91120276.png"  style="zoom:50%;" /> 
 
 3、找到 `[policy]`
 
