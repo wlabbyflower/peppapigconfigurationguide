@@ -51,7 +51,7 @@ static=lc,lazycat,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/
 策略：lc
 ```
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/05dcba4def3643897677fe8c1ba9be9a.jpg?imageSlim" alt="05dcba4def3643897677fe8c1ba9be9a" style="zoom:50%;" /> 
+<img src="https://pic1.imgdb.cn/item/69479edd2bbc57ce91120adf.png" style="zoom:50%;" /> 
 
 7.点击右下角小风车，下滑找到其他设置，找到VPN，打开兼容性增强
 
