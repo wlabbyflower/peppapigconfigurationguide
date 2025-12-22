@@ -16,9 +16,9 @@ Clash内核的程序都可以按照这个思路配置，脚本是通用的，本
 
 - 打开Flclash
 
-- 点击下方“配置” > 右上角“Σ”符号 > 右下角“+”新建 > 点击“未命名”改为“Lzc” > 粘贴下方脚本 > 保存 > 选中脚本
+- 点击下方“工具” > 进阶配置(提供多样化配置) > 脚本(覆写脚本) > 右上角“添加” > 粘贴下方脚本 > 保存 > 选中脚本
 
-<img width="884" height="1295" alt="o2" src="https://github.com/user-attachments/assets/049ed1a5-8911-4c08-8da0-097e595f0a02" />
+<img width="1577" height="872" alt="oNew" src="https://github.com/user-attachments/assets/ffb5186e-0baa-4d7b-9a91-43572cbf0289" />
 
 ```
 // Define main function (script entry)
@@ -121,6 +121,12 @@ function main(config) {
 点击下方“工具” > “访问控制” > 打开“应用访问控制”开关 > 勾选懒猫微服
 
 <img width="591" height="650" alt="o3" src="https://github.com/user-attachments/assets/65bfa029-cf80-4d64-8339-7d79989bc28b" />
+
+## 配置文件覆写
+
+点击下方“配置” > 选择您订阅 点击右侧的“三个点” > 更多 > 覆写 > 覆写模式：脚本 > 选择刚才添加的脚本
+
+<img width="1184" height="872" alt="oNew-1" src="https://github.com/user-attachments/assets/fdd8bbaa-aeaa-489f-bca3-20d56c5fb959" />
 
 ## 选择Node
 
