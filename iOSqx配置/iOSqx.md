@@ -1,7 +1,3 @@
-```bash
-#由于qx某些配置没有开放，目前只能配置共存，配置不了共存并直连，如果您有小火箭，这个更好配置
-```
-
 ## cat的app侧的配置
 
 打开懒猫微服客户端登陆成功后
@@ -20,11 +16,17 @@
 2、找到`[server local]`
 
 ```yaml
+socks5和http,任选其一（优先socks5）,或者都写
 [server local]
 socks5=127.0.0.1:31086,fast-open=false,udp-relay=false,tag=lazycat
+http=127.0.0.1:31085,fast-open=false,udp-relay=false,tag=lazycat
 ```
 
 <img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/050058e031a63ca35359a1c449bbf1b8.jpg?imageSlim" alt="050058e031a63ca35359a1c449bbf1b8" style="zoom:50%;" /> 
+
+同时注意下面的dns部分，不要有no-ipv6的配置
+
+<img src="https://pic1.imgdb.cn/item/69479b2f2bbc57ce91120276.png"  style="zoom:50%;" /> 
 
 3、找到 `[policy]`
 
@@ -44,20 +46,24 @@ static=lc,lazycat,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/
 6、新增一个分流规则
 
 ```bash
-类型：HOST-WILDCARD
-参数：*.heiyu.space
+类型：HOST-SUFFIX
+参数：heiyu.space
 策略：lc
 ```
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/05dcba4def3643897677fe8c1ba9be9a.jpg?imageSlim" alt="05dcba4def3643897677fe8c1ba9be9a" style="zoom:50%;" /> 
+<img src="https://pic1.imgdb.cn/item/69479edd2bbc57ce91120adf.png" style="zoom:50%;" /> 
 
-7、配置完成之后保存
+7.点击右下角小风车，下滑找到其他设置，找到VPN，打开兼容性增强
 
-8、点击右下角风车，运行模式选择规则分流
+<img src="https://pic1.imgdb.cn/item/69479e4b2bbc57ce91120986.png" style="zoom:50%;" /> 
+
+8、配置完成之后保存
+
+9、点击右下角风车，运行模式选择规则分流
 
  <img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251117193039424.png?imageSlim" alt="image-20251117193039424" style="zoom:50%;" /> 
 
-9、验证
+10、验证
 
 能运行cat的同时，还能科学上网
 
