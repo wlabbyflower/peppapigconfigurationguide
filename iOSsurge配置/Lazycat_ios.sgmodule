@@ -6,3 +6,10 @@ ipv6-vif = always
 always-real-ip = %APPEND% *.heiyu.space, *.lazycat.cloud
 always-raw-tcp-hosts = %APPEND% *.heiyu.space, *.lazycat.cloud
 tun-excluded-routes = %APPEND% 6.6.6.6/32, 2000::6666/128
+[Proxy]
+LazyCat-socks5 = socks5, 127.0.0.1, 31086, block-quic=on
+LaztCat-http = http, 127.0.0.1, 31085, block-quic=on
+[Proxy Group]
+LC = url-test, LazyCat-socks5, LaztCat-http, no-alert=0, hidden=0, include-all-proxies=0
+[Rule]
+DOMAIN-SUFFIX,heiyu.space,LC
