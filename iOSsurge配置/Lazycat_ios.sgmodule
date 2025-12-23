@@ -12,7 +12,6 @@ LazyCat-socks5 = socks5, 127.0.0.1, 31086
 LazyCat-http = http, 127.0.0.1, 31085
 
 [Proxy Group]
-# 建议加上 timeout 参数，并补全 url 和 interval
 LC = url-test, LazyCat-socks5, LazyCat-http, url=http://www.gstatic.com/generate_204, interval=300, timeout=3
 
 [Rule]
