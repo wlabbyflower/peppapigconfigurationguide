@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,heiyu.space,LC
 
 [Proxy]
 LazyCat = socks5, 127.0.0.1, 31086, block-quic=on
-LaztCat-http = http, 127.0.0.1, 31085, block-quic=on
+LazyCat-http = http, 127.0.0.1, 31085, block-quic=on
 
 [Proxy Group]
-LC = url-test, LazyCat, LaztCat-http, no-alert=0, hidden=0, include-all-proxies=0
+LC = url-test, LazyCat, LazyCat-http, no-alert=0, hidden=0, include-all-proxies=
