@@ -1,0 +1,60 @@
+# Stash 覆写配置文件
+# 适用于 LazyCat 服务
+name: 'Lzc Overwrite'
+desc: |-
+  懒猫微服 Stash 覆写配置文件。
+  Stash Overwrite Configuration for LCMD.
+# 1. 策略组 (Proxy Groups)
+proxy-groups:
+  - name: "Lzc"
+    type: select
+    icon: https://developer.lazycat.cloud/manage/assets/logo-BVvfUYI1.png
+    proxies:
+      - Lzc-Node
+      - DIRECT
+
+# 2. 节点 (Proxies)
+proxies:
+  - name: "Lzc-Node"
+    type: socks5
+    server: 127.0.0.1
+    port: 31086
+
+# 3. 规则 (Rules)
+# 注意：Stash 会按顺序从上到下匹配规则。
+# 原脚本使用 unshift，意味着新规则优先级最高，放在最前面。
+rules:
+  # IPv6 和 IPv4 的特殊直连
+  - IP-CIDR,2000::6666/128,DIRECT
+  - IP-CIDR,6.6.6.6/32,DIRECT
+  
+  # 域名和进程规则
+  # 注意：原脚本中的 PROCESS-NAME-REGEX 在 Stash 中不直接支持。
+  # 我们使用 PROCESS-NAME 尝试进行关键词匹配。
+  # 如果 Stash 无法精确匹配，可能需要使用 SCRIPT 规则或更长的路径。
+  - DOMAIN-SUFFIX,lazycatmicroserver.com,DIRECT
+  - PROCESS-NAME,cloud.lazycat.client,DIRECT
+  - PROCESS-NAME,懒猫微服,DIRECT
+  - PROCESS-NAME,lzc-core,DIRECT
+  
+  # IPv6 CIDR 规则
+  - IP-CIDR,fc03:1136:3800::/40,Lzc
+  
+  # 域名规则
+  - DOMAIN-SUFFIX,lazycat.cloud,DIRECT
+  - DOMAIN-SUFFIX,heiyu.space,Lzc
+
+# 4. DNS 设置
+dns:
+  fake-ip-filter:
+    - '+.heiyu.space'
+    - '+.lazycat.cloud'
+
+# 5. TUN 设置
+# Stash 的 TUN 设置通常在 UI 中配置，这里列出供参考
+# 对应原脚本的 route-exclude-address
+tun:
+  route-exclude-address:
+    - 6.6.6.6/32
+    - 2000::6666/128
+    - 183.136.206.164/32
