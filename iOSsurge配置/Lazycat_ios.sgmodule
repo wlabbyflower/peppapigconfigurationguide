@@ -3,7 +3,7 @@
 
 [General]
 ipv6 = true
-ipv6-vif = always
+ipv6-vif = auto
 always-real-ip = %APPEND% *.heiyu.space, *.lazycat.cloud
 always-raw-tcp-hosts = %APPEND% *.heiyu.space, *.lazycat.cloud
 tun-excluded-routes = %APPEND% 6.6.6.6/32, 2000::6666/128
