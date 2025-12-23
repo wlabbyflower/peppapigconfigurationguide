@@ -1,15 +1,21 @@
 #!name=Lazycat直连与共存
+#!desc=解决Lazycat与Surge的共存问题，将特定流量转发至本地Lazycat端口。
 
 [General]
 ipv6 = true
 ipv6-vif = always
 always-real-ip = %APPEND% *.heiyu.space, *.lazycat.cloud
-always-raw-tcp-hosts = %APPEND% *.heiyu.space, *.lazycat.cloud
 tun-excluded-routes = %APPEND% 6.6.6.6/32, 2000::6666/128
+
 [Proxy]
-LazyCat-socks5 = socks5, 127.0.0.1, 31086, block-quic=on
-LaztCat-http = http, 127.0.0.1, 31085, block-quic=on
+LazyCat-socks5 = socks5, 127.0.0.1, 31086
+LazyCat-http = http, 127.0.0.1, 31085
+
 [Proxy Group]
-LC = url-test, LazyCat-socks5, LaztCat-http, no-alert=0, hidden=0, include-all-proxies=0
+# 建议加上 timeout 参数，并补全 url 和 interval
+LC = url-test, LazyCat-socks5, LazyCat-http, url=http://www.gstatic.com/generate_204, interval=300, timeout=3
+
 [Rule]
+# 补全了 lazycat.cloud
 DOMAIN-SUFFIX,heiyu.space,LC
+DOMAIN-SUFFIX,lazycat.cloud,LC
