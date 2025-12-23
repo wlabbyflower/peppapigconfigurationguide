@@ -8,7 +8,7 @@ always-raw-tcp-hosts = %APPEND% *.heiyu.space, *.lazycat.cloud
 tun-excluded-routes = %APPEND% 6.6.6.6/32, 2000::6666/128
 
 [Rule]
-DOMAIN-SUFFIX,heiyu.space,LazyCat
+DOMAIN-SUFFIX,heiyu.space,懒猫微服
 
 [Proxy]
 LazyCat = socks5, 127.0.0.1, 31086, block-quic=on
