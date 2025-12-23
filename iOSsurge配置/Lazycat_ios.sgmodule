@@ -8,13 +8,6 @@ always-real-ip = %APPEND% *.heiyu.space, *.lazycat.cloud
 always-raw-tcp-hosts = %APPEND% *.heiyu.space, *.lazycat.cloud
 tun-excluded-routes = %APPEND% 6.6.6.6/32, 2000::6666/128
 
-[Proxy]
-LazyCat-socks5 = socks5, 127.0.0.1, 31086
-LazyCat-http = http, 127.0.0.1, 31085
-
-[Proxy Group]
-LC = fallback, LazyCat-socks5, LazyCat-http, url=http://www.gstatic.com/generate_204, interval=300
-
 [Rule]
-DOMAIN-SUFFIX,heiyu.space,LC
-DOMAIN-SUFFIX,lazycat.cloud,LC
+DOMAIN-SUFFIX,heiyu.space,LC,extended-matching
+DOMAIN-SUFFIX,lazycat.cloud,LC,extended-matching
