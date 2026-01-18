@@ -14,19 +14,17 @@
 
 ![image-20251013180050285](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013180050285.png?imageSlim)
 
-## 3、向导部署导入订阅
+## 3、导入订阅
 
-将订阅连接导入（后续更新订阅也需要手动导入）
-
-![image-20251013180721652](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013180721652.png?imageSlim)
-
-如果后续需要更新/更换订阅在应用右击——应用详情——部署参数——去设置（如果白屏，客户端缓存问题，去浏览器打开即可）
-
-![image-20251013180957350](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013180957350.png?imageSlim)
+将订阅连接导入（后续更新订阅也需要手动导入）![image-20260118224905531](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20260118224905531.png)
 
 ## 4、进入应用选择节点
 
-![image-20251013181129115](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013181129115.png?imageSlim)
+**需要手动开tun！！！重启应用每次需要手动起tun**
+
+![image-20260118225115304](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20260118225115304.png)
+
+![image-20260118225208643](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20260118225208643.png)
 
 ## 5、测试访问
 
