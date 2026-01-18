@@ -4,7 +4,7 @@
 
 在电脑终端下载clash这个lpk文件
 
-[clash.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/clash-v0.0.5.lpk)
+[clash.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/com.lxy.app.clash-v1.19.19.lpk)
 
 ![image-20251013175802908](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013175802908.png?imageSlim)
 
