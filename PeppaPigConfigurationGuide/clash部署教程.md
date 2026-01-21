@@ -4,7 +4,7 @@
 
 在电脑终端下载clash这个lpk文件
 
-[clash.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/com.lxy.app.clash-v1.19.19.lpk)
+[clash.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/com.lxy.app.clash-v1.19.20.lpk)
 
 ![image-20251013175802908](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013175802908.png?imageSlim)
 
@@ -16,7 +16,11 @@
 
 ## 3、导入订阅
 
-将订阅连接导入（后续更新订阅也需要手动导入）![image-20260118224905531](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20260118224905531.png)
+将订阅连接导入（后续更新订阅也需要手动导入）
+
+注意这里导入方式，如果订阅导入不了，可以选择文件导入和内容导入
+
+![317bbb2ea6d6bc349162aa745ed6c4d5](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/317bbb2ea6d6bc349162aa745ed6c4d5.png)
 
 ## 4、进入应用选择节点
 
