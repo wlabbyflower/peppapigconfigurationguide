@@ -5,7 +5,7 @@
 
 在电脑终端下载小猪佩奇这个lpk文件
 
-[PeppaPig.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/PeppaPig.lpk)
+[PeppaPig.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/com.lxy.app.clash-v1.19.20.lpk)
 
 ![image-20250304170425630](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154109.png?imageSlim)
 
