@@ -1,5 +1,7 @@
 # 小猪佩奇配置指南
 
+![5edb9ffa98ad619bcfec887b9d7e0e6b](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/5edb9ffa98ad619bcfec887b9d7e0e6b.png)
+
 本指南将帮助您快速配置和使用小猪佩奇软件，实现代理服务的正常运行。
 
 包含内容：
@@ -12,4 +14,4 @@
 
 ***声明:cat的客户端在iOS手机上会与原有的VPN存在冲突，cat客户端会有一个proxy模式，这样可以共存，以上配置大多数可以配置共存、直连；极个别这些应用一些配置没有开放，只能配置到共存，非直连***
 
-具体操作指南，请查看PDF
+具体操作指南，请查看
