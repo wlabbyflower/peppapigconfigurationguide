@@ -3,6 +3,13 @@
 
 ## 1、小猪佩奇软件
 
+新版本可以设置开启应用自动连接代理：启动器页面右击查看应用详情 -> 环境变量 -> v2raya -> 添加配置 V2RAYA_AUTOSTART=true
+使用这个版本需要注意：
+> ⚠️⚠️⚠️若您有此需求。请务必先打开ssh且网络配置测试没有问题后再通过应用详情修改本参数。本软件会接管系统内部、外部网络，如果开启后，出现网络问题可能导致系统和ssh都无法访问。
+> ⚠️⚠️⚠️若您有此需求。请务必先打开ssh且网络配置测试没有问题后再通过应用详情修改本参数。本软件会接管系统内部、外部网络，如果开启后，出现网络问题可能导致系统和ssh都无法访问。
+> ⚠️⚠️⚠️若您有此需求。请务必先打开ssh且网络配置测试没有问题后再通过应用详情修改本参数。本软件会接管系统内部、外部网络，如果开启后，出现网络问题可能导致系统和ssh都无法访问。
+![config.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/080ca6e8-fe71-43f3-bb1e-c6914d13693e.png)
+
 在电脑终端下载小猪佩奇这个lpk文件
 
 [PeppaPig.lpk](https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/PeppaPigConfigurationGuide/PeppaPig.lpk)
