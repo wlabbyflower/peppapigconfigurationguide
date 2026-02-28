@@ -1,7 +1,5 @@
 # 小猪佩奇配置指南
 
-![5edb9ffa98ad619bcfec887b9d7e0e6b](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/5edb9ffa98ad619bcfec887b9d7e0e6b.png)
-
 本仓库用于整理懒猫微服（cat）相关代理配置教程，覆盖微服内代理部署、局域网共享代理、以及与常见客户端的共存配置。
 
 ## 快速入口
