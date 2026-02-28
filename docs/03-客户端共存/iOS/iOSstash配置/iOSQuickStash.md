@@ -12,7 +12,7 @@
 
 ### 导入覆写配置
 
-覆写文件地址：https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/iOSstash%E9%85%8D%E7%BD%AE/lzc.stash
+覆写文件地址：https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/docs/03-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%85%B1%E5%AD%98/iOS/iOSstash%E9%85%8D%E7%BD%AE/lzc.stash
 
 点击“覆写”卡片 > 点击“+”添加 > 输入覆写文件地址 > 点击“下载” > 下滑安装
 

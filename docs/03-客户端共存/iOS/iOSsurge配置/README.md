@@ -30,7 +30,7 @@
 输入以下地址：
 
 ```
-https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/iOSsurge%E9%85%8D%E7%BD%AE/Surge.conf
+https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/docs/03-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%85%B1%E5%AD%98/iOS/iOSsurge%E9%85%8D%E7%BD%AE/Surge.conf
 ```
 
 ### 步骤 3：更新外部资源
@@ -68,7 +68,7 @@ https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/h
 点击 **修改** → **模块** → **安装新模块**，粘贴以下地址：
 
 ```
-https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/iOSsurge%E9%85%8D%E7%BD%AE/Lazycat_ios.sgmodule
+https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/docs/03-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%85%B1%E5%AD%98/iOS/iOSsurge%E9%85%8D%E7%BD%AE/Lazycat_ios.sgmodule
 ```
 
 点击启用这个模块：

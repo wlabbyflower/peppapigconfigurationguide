@@ -2,16 +2,41 @@
 
 ![5edb9ffa98ad619bcfec887b9d7e0e6b](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/5edb9ffa98ad619bcfec887b9d7e0e6b.png)
 
-本指南将帮助您快速配置和使用小猪佩奇软件，实现代理服务的正常运行。
+本仓库用于整理懒猫微服（cat）相关代理配置教程，覆盖微服内代理部署、局域网共享代理、以及与常见客户端的共存配置。
 
-包含内容：
+## 快速入口
 
-1. cat内正常运行[v2raya](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/PeppaPigConfigurationGuide.md)、[clash](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/PeppaPigConfigurationGuide/clash%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B.md)
-2. cat作为同LAN中设备的[proxy](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/构建内网代理方法：配置代理为微服所在局域网可访问.md)
-3. 自己的代理软件和cat网络冲突解决方案  [clash](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/clash/clash.md)、[macos端shadowrocket（小火箭）](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/macos端shadowrocket（小火箭）/shadowrocket.md)、[macos端surge](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/macos端surge/surge.md)、[iOS端-Surge](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/iOSsurge配置/README.md)、[iOS端qx](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/iOSqx配置/iOSqx.md)、[macos端qx](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/macos端QX配置/macos端QX配置.md)、[singbox](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6%E5%92%8C%E5%BE%AE%E6%9C%8D%E7%BD%91%E7%BB%9C%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/singbox/singbox.json%E9%85%8D%E7%BD%AE.md)、[Loon](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/ios端Loon/Loon配置共存教程.md)、[v2ray系列](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/v2ray系列/v2ray系列.md)
-4. iOS客户端参考视频：[iOS小火箭配置](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/iOS%E5%B0%8F%E7%81%AB%E7%AE%AD%E9%85%8D%E7%BD%AE/%E5%B0%8F%E7%81%AB%E7%AE%AD%E5%BC%80%E5%90%AF%E5%90%8E%E5%8F%AF%E4%BB%A5%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE.mp4)、[stash](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/iOSstash%E9%85%8D%E7%BD%AE/stash.mp4)（其他说明：如果有直连影响，可以在“跳过路由”地方加两个IP：6.6.6.6/32   2000::6666/128
-5. Android客户端参考视频：[猫箱(nekobox)(媲美V2raya)](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/Android%E7%9A%84%E7%8C%AB%E7%AE%B1%EF%BC%88nekobox%EF%BC%89/nekobox.mp4)、[Android-flclash](https://github.com/wlabbyflower/peppapigconfigurationguide/blob/main/Flclash/Flclash-Android.md)
+### 1) 微服内代理部署
+- [PeppaPig（v2raya）部署指南](./docs/01-微服内代理部署/PeppaPigConfigurationGuide/PeppaPigConfigurationGuide.md)
+- [Clash 部署教程](./docs/01-微服内代理部署/PeppaPigConfigurationGuide/clash部署教程.md)
 
-***声明:cat的客户端在iOS手机上会与原有的VPN存在冲突，cat客户端会有一个proxy模式，这样可以共存，以上配置大多数可以配置共存、直连；极个别这些应用一些配置没有开放，只能配置到共存，非直连***
+### 2) 局域网共享代理
+- [构建内网代理（同 LAN 设备可访问）](./docs/02-局域网代理共享/构建内网代理方法：配置代理为微服所在局域网可访问.md)
 
-具体操作指南，请查看
+### 3) 客户端共存配置
+- 跨平台：
+[Clash](./docs/03-客户端共存/cross-platform/clash/clash.md) / [Sing-box](./docs/03-客户端共存/cross-platform/singbox/singbox.json配置.md) / [v2ray 系列](./docs/03-客户端共存/cross-platform/v2ray系列/v2ray系列.md)
+- Android：
+[FlClash](./docs/03-客户端共存/Android/Flclash/Flclash-Android.md) / [NekoBox 参考视频](./docs/03-客户端共存/Android/Android的猫箱（nekobox）/nekobox.mp4)
+- iOS：
+[小火箭](./docs/03-客户端共存/iOS/iOS小火箭配置/iOS端小火箭与cat配置共存.md) / [Loon](./docs/03-客户端共存/iOS/ios端Loon/Loon配置共存教程.md) / [QX](./docs/03-客户端共存/iOS/iOSqx配置/iOSqx.md) / [Stash（手动）](./docs/03-客户端共存/iOS/iOSstash配置/iOS端stash与cat配置共存.md) / [Stash（Quick）](./docs/03-客户端共存/iOS/iOSstash配置/iOSQuickStash.md) / [Surge](./docs/03-客户端共存/iOS/iOSsurge配置/README.md)
+- macOS：
+[QX](./docs/03-客户端共存/macOS/macos端QX配置/macos端QX配置.md) / [Shadowrocket](./docs/03-客户端共存/macOS/macos端shadowrocket（小火箭）/shadowrocket.md) / [Surge](./docs/03-客户端共存/macOS/macos端surge/surge.md)
+
+## 目录结构（已优化）
+
+```text
+docs/
+  01-微服内代理部署/
+  02-局域网代理共享/
+  03-客户端共存/
+    Android/
+    iOS/
+    macOS/
+    cross-platform/
+```
+
+## 说明
+
+- 本次结构优化仅调整目录与文档链接，未修改教程中的配置代码内容。
+- iOS 端与原 VPN 可能冲突，建议优先使用 cat 的 `Proxy` 模式并按教程配置绕过路由。
