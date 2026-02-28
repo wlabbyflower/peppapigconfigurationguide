@@ -13,7 +13,7 @@
 
 ### 3) 客户端共存配置
 - 跨平台：
-[Clash](./docs/03-客户端共存/cross-platform/clash/clash.md) / [Sing-box](./docs/03-客户端共存/cross-platform/singbox/singbox.json配置.md) / [v2ray 系列](./docs/03-客户端共存/cross-platform/v2ray系列/v2ray系列.md)
+[Clash](./docs/03-客户端共存/cross-platform/clash/clash.md) / [Sing-box](./docs/03-客户端共存/cross-platform/singbox/singbox.json配置.md) / [v2ray 系列](./docs/03-客户端共存/cross-platform/v2ray系列/v2ray系列.md) / [Hiddify](./docs/03-客户端共存/cross-platform/Hiddify/Hiddify.md)
 - Android：
 [FlClash](./docs/03-客户端共存/Android/Flclash/Flclash-Android.md) / [NekoBox 参考视频](./docs/03-客户端共存/Android/Android的猫箱（nekobox）/nekobox.mp4)
 - iOS：
