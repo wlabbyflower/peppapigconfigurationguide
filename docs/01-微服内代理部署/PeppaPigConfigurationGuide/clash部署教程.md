@@ -46,3 +46,7 @@ ssh到微服访问谷歌
 
 ![image-20251013181402321](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013181402321.png?imageSlim)
 
+## 更新日志
+
+- 1.19.35
+- 新增手动添加 `域名/ip` 走直连还是代理
