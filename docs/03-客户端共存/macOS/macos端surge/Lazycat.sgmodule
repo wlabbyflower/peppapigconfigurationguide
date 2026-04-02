@@ -1,22 +1,21 @@
-#!name=Lazycat Compatibility (Fixed)
+#!name=Lazycat Compatibility (Fixed v2)
 #!desc=Fix Lazycat for Surge (macOS/iOS)
 
 [General]
 ipv6 = true
 ipv6-vif = auto
 
-# 这些支持 APPEND
 always-real-ip = %APPEND% *.heiyu.space, *.lazycat.cloud
 always-raw-tcp-hosts = %APPEND% *.heiyu.space, *.lazycat.cloud
 skip-proxy = %APPEND% *.heiyu.space, *.lazycat.cloud
 
-# ⚠️ 不能用 APPEND，必须完整写
+# ⚠️ 不能 APPEND
 tun-excluded-routes = 6.6.6.6/32, 2000::6666/128
 
 [Rule]
-# IPv6 打洞直连
 IP-CIDR6,fc03:1136:3800::/40,DIRECT,no-resolve
-
-# 域名直连（建议加上，更稳）
 DOMAIN-SUFFIX,heiyu.space,DIRECT
 DOMAIN-SUFFIX,lazycat.cloud,DIRECT
+
+# ✅ 必须加这一行
+FINAL,DIRECT
