@@ -1,0 +1,24 @@
+# clash部署教程更新日志
+
+<a id="clash-change-log"></a>
+
+## 更新日志
+
+### 1.20.40(当前最新版)
+
+- 1. 新增节点控制模式（简单模式/完整模式）
+- 2. 新增手动添加节点功能（实验特性）
+- 3. 拉取订阅新增添加`严格模式/宽松模式`
+- 4. 拉取订阅新增自定义 UA 功能
+
+### 1.19.35
+
+- 新增手动添加 `域名/ip` 走直连还是代理
+
+## 新版本使用注意事项（之前安装过的需要注意, 初始版本低于1.19.35的）
+
+1. 卸载旧版本后重新安装新版本。新版本和旧版本完全不一致，处于不兼容的状态。
+2. 如果是浏览器打开需要清除一下浏览器的缓存。
+   ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/0d595cfb-77dc-42e8-84ba-8a72588856f1.png "image.png")
+   ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/1432fe33-657b-46f6-849d-3438baa9241c.png "image.png")
+   tun 模式默认是关闭的，因为开启tun模式会导致连接稍慢一点（不会影响直连）
