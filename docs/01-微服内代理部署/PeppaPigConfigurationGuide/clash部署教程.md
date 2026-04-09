@@ -8,7 +8,7 @@
 
 请先在电脑终端下载 Clash 的 `lpk` 安装包。
 
-[clash.lpk](./com.lxy.app.clash-v1.20.40.lpk)
+[clash.lpk](./com.lxy.app.clash-v1.20.41.lpk)
 
 ![image-20251013175802908](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013175802908.png?imageSlim)
 
@@ -25,6 +25,7 @@
 ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/2/626c33f7-4edb-4fc8-a315-04e917f4ee48.png "image.png")
 
 > 说明：
+>
 > 1. 如果订阅拉取成功但没有节点，可以切换“宽松/严格”模式后重新拉取。
 > 2. 如果订阅拉取失败，可以尝试修改 `UA` 后再次拉取。
 
@@ -67,6 +68,7 @@ grpc-opts: null
 ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/2/5a6fd868-0cac-49d7-adc1-2a682d7f66fe.png "image.png")
 
 > 模式说明：
+>
 > 1. 简单模式：只需要关注当前代理使用的是哪个节点，默认即为该模式。
 > 2. 完整模式：可以为 Google、YouTube 等不同网站分别指定节点。
 > 3. 如无精细化控制需求，建议直接使用默认的简单模式。
