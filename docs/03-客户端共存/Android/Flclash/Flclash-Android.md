@@ -91,14 +91,23 @@ function main(config) {
         ];
     }
 
+    // 确保 hosts 配置存在
+    if (!config.hosts || typeof config.hosts !== "object" || Array.isArray(config.hosts)) {
+        config.hosts = {};
+    }
+    config.hosts['localhost.lazycat.cloud'] = '127.0.0.1';
+    config.hosts['*.localhost.lazycat.cloud'] = '127.0.0.1';
+
     // 确保 DNS 配置存在
     if (!config.dns) config.dns = {};
+    config.dns['use-hosts'] = true;
     if (!config.dns['fake-ip-filter']) config.dns['fake-ip-filter'] = [];
     if (!Array.isArray(config.dns['fake-ip-filter'])) config.dns['fake-ip-filter'] = [];
 
     // heiyu.space 不使用 fake-ip
     config.dns['fake-ip-filter'].push('+.heiyu.space');
     config.dns['fake-ip-filter'].push('+.lazycat.cloud');
+    config.dns['fake-ip-filter'].push('+.localhost.lazycat.cloud');
 
     // 确保 `tun` 存在
     if (!config["tun"]) {
