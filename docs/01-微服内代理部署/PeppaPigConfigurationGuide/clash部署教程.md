@@ -8,7 +8,7 @@
 
 请先在电脑终端下载 Clash 的 `lpk` 安装包。
 
-[clash.lpk](./com.lxy.app.clash-v1.20.43.lpk)
+[clash.lpk](./com.lxy.app.clash-v1.21.1.lpk)
 
 ![image-20251013175802908](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013175802908.png?imageSlim)
 
