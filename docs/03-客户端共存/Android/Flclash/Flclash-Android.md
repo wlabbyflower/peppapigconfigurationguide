@@ -23,96 +23,108 @@ Clash内核的程序都可以按照这个思路配置，脚本是通用的，本
 ```
 // Define main function (script entry)
 function main(config) {
-    // 确保 `proxy-groups` 存在
-    if (!config["proxy-groups"]) {
-        config["proxy-groups"] = [];
+  // ── sniffer ──────────────────────────────────────────────────────────────
+  if (!config.sniffer) config.sniffer = {};
+
+  const snifferSkipDomains = ["+.heiyu.space", "+.lazycat.cloud"];
+  if (!config.sniffer["skip-domain"]) {
+    config.sniffer["skip-domain"] = snifferSkipDomains;
+  } else {
+    for (const d of snifferSkipDomains) {
+      if (!config.sniffer["skip-domain"].includes(d))
+        config.sniffer["skip-domain"].push(d);
     }
+  }
 
-    // 定义 "Lzc" 策略组
-    const LzcGroup = {
-        name: "Lzc",
-        type: "select",
-        icon: "https://developer.lazycat.cloud/manage/assets/logo-BVvfUYI1.png",
-        proxies: [
-            "DIRECT",
-            "Lzc-Node"
-        ]
-    };
-
-    // 插入 "Lzc" 策略组到末尾
-    config["proxy-groups"].push(LzcGroup);
-
-    // 确保 `proxies` 存在
-    if (!config["proxies"]) {
-        config["proxies"] = [];
-    }
-
-    // 定义 "Lzc-Node" 节点
-    const LzcNode = {
-        name: "Lzc-Node",
-        type: "http",
-        server: "127.0.0.1",
-        port: 31085
-    };
-
-    // 插入 "Lzc-Node" 节点
-    config["proxies"].push(LzcNode);
-
-    const rule = 'DOMAIN-SUFFIX,heiyu.space,Lzc';
-    const rule_ip = 'IP-CIDR,fc03:1136:3800::/40,Lzc';
-    const rule_processname1 = 'PROCESS-NAME-REGEX,.*lzc-core.*,DIRECT';
-    const rule_processname2 = 'PROCESS-NAME-REGEX,.*懒猫微服.*,DIRECT';
-    const rule_apk = 'PROCESS-NAME,cloud.lazycat.client,DIRECT';
-    const rule_cloud = 'DOMAIN-SUFFIX,lazycat.cloud,DIRECT';
-    const rule_lcms = 'DOMAIN-SUFFIX,lazycatmicroserver.com,DIRECT';
-
-    // 确保 rules 存在
-    if (Array.isArray(config.rules)) {
-        config.rules.unshift(rule);
-        config.rules.unshift(rule_cloud);
-        config.rules.unshift(rule_ip);
-        config.rules.unshift(rule_processname1);
-        config.rules.unshift(rule_processname2);
-        config.rules.unshift(rule_apk);
-        config.rules.unshift(rule_lcms);
-        config.rules.unshift('IP-CIDR,6.6.6.6/32,DIRECT');
-        config.rules.unshift('IP-CIDR,2000::6666/128,DIRECT');
+  const skipAddresses = [
+    "6.6.6.6/32",
+    "2000::6666/128",
+    "fc03:1136:3800::/40",
+    "10.0.0.0/8",
+    "172.16.0.0/12",
+    "169.254.0.0/16",
+    "192.168.0.0/16",
+    "fd00::/8",
+    "fe80::/10",
+  ];
+  for (const key of ["skip-src-address", "skip-dst-address"]) {
+    if (!config.sniffer[key]) {
+      config.sniffer[key] = [...skipAddresses];
     } else {
-        config.rules = [
-            'IP-CIDR,2000::6666/128,DIRECT',
-            'IP-CIDR,6.6.6.6/32,DIRECT',
-            rule,
-            rule_cloud,
-            rule_ip,
-            rule_processname1,
-            rule_processname2,
-            rule_apk,
-            rule_lcms
-        ];
+      for (const addr of skipAddresses) {
+        if (!config.sniffer[key].includes(addr))
+          config.sniffer[key].push(addr);
+      }
     }
+  }
 
-    // 确保 DNS 配置存在
-    if (!config.dns) config.dns = {};
-    if (!config.dns['fake-ip-filter']) config.dns['fake-ip-filter'] = [];
-    if (!Array.isArray(config.dns['fake-ip-filter'])) config.dns['fake-ip-filter'] = [];
+  // ── tun ──────────────────────────────────────────────────────────────────
+  if (!config.tun) config.tun = {};
 
-    // heiyu.space 不使用 fake-ip
-    config.dns['fake-ip-filter'].push('+.heiyu.space');
-    config.dns['fake-ip-filter'].push('+.lazycat.cloud');
-
-    // 确保 `tun` 存在
-    if (!config["tun"]) {
-        config["tun"] = [];
+  const tunExclude = [
+    "6.6.6.6/32",
+    "2000::6666/128",
+    "fc03:1136:3800::/40",
+    "192.168.0.0/16",
+    "10.0.0.0/8",
+    "172.16.0.0/12",
+    "169.254.0.0/16",
+    "224.0.0.0/4",
+    "fd00::/8",
+    "fe80::/10",
+  ];
+  if (!config.tun["route-exclude-address"]) {
+    config.tun["route-exclude-address"] = [...tunExclude];
+  } else {
+    for (const addr of tunExclude) {
+      if (!config.tun["route-exclude-address"].includes(addr))
+        config.tun["route-exclude-address"].push(addr);
     }
-    if (!config.tun['route-exclude-address']) config.tun['route-exclude-address'] = [];
-    //6.6.6.6/32 不走 TUN
-    config.tun['route-exclude-address'].push('6.6.6.6/32');
-    //2000::6666/128 不走 TUN
-    config.tun['route-exclude-address'].push('2000::6666/128');
-    //183.136.206.164 不走 TUN
-    config.tun['route-exclude-address'].push('183.136.206.164/32');
-    
-    return config;
+  }
+
+  // ── dns ───────────────────────────────────────────────────────────────────
+  if (!config.dns) config.dns = {};
+
+  config.dns["fake-ip-filter-mode"] = "blacklist";
+
+  const fakeIpAdd = ["+.heiyu.space"];
+  if (!config.dns["fake-ip-filter"]) {
+    config.dns["fake-ip-filter"] = [...fakeIpAdd];
+  } else {
+    for (const d of fakeIpAdd) {
+      if (!config.dns["fake-ip-filter"].includes(d))
+        config.dns["fake-ip-filter"].push(d);
+    }
+  }
+
+  // ── proxies ───────────────────────────────────────────────────────────────
+  const lazycatProxy = {
+    name: "懒猫微服",
+    type: "http",
+    server: "127.0.0.1",
+    port: 31085,
+    "skip-cert-verify": true,
+  };
+  if (!config.proxies) {
+    config.proxies = [lazycatProxy];
+  } else if (!config.proxies.find((p) => p.name === "懒猫微服")) {
+    config.proxies.push(lazycatProxy);
+  }
+
+  // ── rules (prepend, highest priority) ────────────────────────────────────
+  const newRules = [
+    "PROCESS-NAME,懒猫微服,DIRECT",
+    "PROCESS-NAME,lzc-core.darwin,DIRECT,no-resolve",
+  ];
+  if (!config.rules) {
+    config.rules = newRules;
+  } else {
+    for (const rule of [...newRules].reverse()) {
+      if (!config.rules.includes(rule)) config.rules.unshift(rule);
+    }
+  }
+
+  return config;
 }
 ```
 
