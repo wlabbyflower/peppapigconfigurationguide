@@ -92,3 +92,17 @@ grpc-opts: null
 ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/2/37a9c47b-1548-4ca8-8b2b-4a65bdbf6458.png "image.png")
 
 可以手动控制某些 IP 或域名，强制走代理或直连。
+
+## 7、链式代理 (1.21.7支持)
+
+> 目前只支持手动添加的节点做链式代理
+
+1. 手动添加节点。
+   ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/a4a706a1-3310-4447-85a0-54c38085687a.png "image.png")
+2. 创建链式代理节点。
+   ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/3f2d1a52-8bee-40ac-922d-a7aebfbfcbb9.png "image.png")
+3. 使用链式代理节点。可以指定某一个分组使用链式代理，也可以指定所有的都走链式代理。
+   ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/f4e6af64-66e6-46dd-b250-d3684cc8c5d5.png "image.png")
+
+目前创建的所有链式代理节点可以在链式代理分组中看到
+![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/8eb6bffe-5007-475b-9df7-29a0eea4b897.png "image.png")

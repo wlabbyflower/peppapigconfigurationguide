@@ -1,4 +1,4 @@
-# clash部署教程更新日志
+# clash部署教程更新日志 -- 废弃
 
 <a id="clash-change-log"></a>
 
