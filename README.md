@@ -38,3 +38,11 @@ docs/
 
 - 本次结构优化仅调整目录与文档链接，未修改教程中的配置代码内容。
 - iOS 端与原 VPN 可能冲突，建议优先使用 cat 的 `Proxy` 模式并按教程配置绕过路由。
+
+## Star History
+
+<p align="center">
+  <a href="https://www.star-history.com/#wlabbyflower/peppapigconfigurationguide&Date">
+    <img src="https://api.star-history.com/svg?repos=wlabbyflower/peppapigconfigurationguide&type=Date" alt="Star History Chart" width="720">
+  </a>
+</p>
