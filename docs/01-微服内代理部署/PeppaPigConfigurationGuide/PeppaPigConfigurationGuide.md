@@ -39,9 +39,11 @@
 
 ## 5、导入后的配置
 
-导入成功后设置一下代理方式，点击右上角“设置”——>**透明代理/系统代理实现方式**选择“tproxy“——>保存并应用
+导入成功后设置一下代理方式，点击右上角“设置”——>**透明代理/系统代理实现方式**选择“redirect“——>保存并应用
 
-![image-20250304152949679](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/20250305222154113.png?imageSlim)
+<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260601103103045.png"/>
+
+
 
 ## 6、开始使用
 
