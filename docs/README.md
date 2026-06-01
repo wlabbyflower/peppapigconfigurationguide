@@ -19,10 +19,10 @@
 - [Sing-box](./03-客户端共存/cross-platform/singbox/singbox.json配置.md)
 - [v2ray 系列](./03-客户端共存/cross-platform/v2ray系列/v2ray系列.md)
 - [Hiddify](./03-客户端共存/cross-platform/Hiddify/Hiddify.md)
+- [FlClash](./03-客户端共存/cross-platform/Flclash/Flclash.md)
 
 ### Android
 
-- [FlClash](./03-客户端共存/Android/Flclash/Flclash-Android.md)
 - [NekoBox 参考视频](./03-客户端共存/Android/Android的猫箱（nekobox）/nekobox.mp4)
 
 ### iOS
