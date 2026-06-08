@@ -20,7 +20,7 @@ Clash内核的程序都可以按照这个思路配置，脚本是通用的
 
 打开ClashMi
 
-![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/clashmi1.png)
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260608160305768.png)
 
 覆写使用的URL：
 
@@ -60,7 +60,7 @@ https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/h
 
   这里安卓端与其他设备相同，可按相同操作进行配置。
 
-![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/clashmi1.png)
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260608160305768.png)
 
 ```URL
 https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/docs/03-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%85%B1%E5%AD%98/cross-platform/ClashMi/clashmi_script.js
@@ -112,7 +112,7 @@ clashmi版本大于1.0.24.1006
 
   这里IOS端与其他设备相同，可按相同操作进行配置。
 
-![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/clashmi1.png)
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260608160305768.png)
 
 ```
 https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/heads/main/docs/03-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%85%B1%E5%AD%98/cross-platform/ClashMi/clashmi_script.js
@@ -141,6 +141,28 @@ https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/h
 ![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/ios3.png)
 
 配置完成后可以自行选择节点，不影响更新订阅。
+
+## 错误排查
+
+若遇到开启后共存失败的问题，可以检查以下内容：
+
+1.安卓/IOS端：
+
+点击：代理 - 懒猫微服策略  确认选择的是http模式
+
+2.通用检查：
+
+点击：覆写 - 编辑刚刚导入的配置 - 确认追加覆写栏为“内置-覆写”
+
+确认核心设置-IPV6   设置为启动
+
+3.自己的代理里面没有懒猫微服策略：
+
+（1）点击：核心设置 - 覆写 - lzc右边的三个点（导入的链接）-  点击查看     确认内部存在配置
+
+（2）点击：我的配置 - 要使用的订阅右边的三个点 - 编辑配置 - 核心覆写    选择的是导入连接的覆写脚本（lzc）
+
+
 
 ## 结束
 
