@@ -1,5 +1,5 @@
 #!name=Lazycat直连与共存
-#!desc=修复Unknown Policy错误，使用Fallback模式
+#!desc=Lazycat直连与共存
 
 [General]
 ipv6 = true
