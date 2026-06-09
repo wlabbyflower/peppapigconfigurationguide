@@ -13,4 +13,4 @@ DOMAIN-SUFFIX,heiyu.space,LC,extended-matching
 DOMAIN-SUFFIX,lazycat.cloud,LC,extended-matching
 
 [MITM]
-hostname = %INSERT% -heiyu.space, -*.heiyu.space, -lazycat.cloud, -*.lazycat.cloud
+hostname = %INSERT% -*.heiyu.space, -lazycat.cloud, -*.lazycat.cloud
