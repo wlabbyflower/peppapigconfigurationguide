@@ -47,7 +47,6 @@ rules:
 # 4. DNS 设置
 dns:
   fake-ip-filter:
-    - '+.heiyu.space'
     - '+.lazycat.cloud'
 
 # 5. TUN 设置
