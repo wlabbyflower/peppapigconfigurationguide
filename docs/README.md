@@ -15,7 +15,7 @@
 
 ### 跨平台
 
-- [Clash](./03-客户端共存/cross-platform/clash/clash.md)
+- [clash-verge](./03-客户端共存/cross-platform/clash/clashverge.md)
 - [Sing-box](./03-客户端共存/cross-platform/singbox/singbox.json配置.md)
 - [v2ray 系列](./03-客户端共存/cross-platform/v2ray系列/v2ray系列.md)
 - [Hiddify](./03-客户端共存/cross-platform/Hiddify/Hiddify.md)
