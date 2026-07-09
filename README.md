@@ -38,13 +38,3 @@ docs/
 
 - 本次结构优化仅调整目录与文档链接，未修改教程中的配置代码内容。
 - iOS 端与原 VPN 可能冲突，建议优先使用 cat 的 `Proxy` 模式并按教程配置绕过路由。
-
-## Star History
-
-<p align="center">
-  <a href="https://www.star-history.com/?repos=wlabbyflower%2Fpeppapigconfigurationguide&type=date&legend=top-left">
-    查看本仓库的 Star History
-  </a>
-</p>
-
-> Star History 的 README 实时图表现在需要在 Star History 页面生成带加密 token 的嵌入代码；这里先保留可访问的查询入口，避免无 token 图表接口在 README 中加载失败。
