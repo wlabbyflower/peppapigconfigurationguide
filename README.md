@@ -42,11 +42,9 @@ docs/
 ## Star History
 
 <p align="center">
-  <a href="https://www.star-history.com/wlabbyflower/peppapigconfigurationguide">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&theme=dark&legend=top-left" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&legend=top-left" />
-      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&legend=top-left" />
-    </picture>
+  <a href="https://www.star-history.com/?repos=wlabbyflower%2Fpeppapigconfigurationguide&type=date&legend=top-left">
+    查看本仓库的 Star History
   </a>
 </p>
+
+> Star History 的 README 实时图表现在需要在 Star History 页面生成带加密 token 的嵌入代码；这里先保留可访问的查询入口，避免无 token 图表接口在 README 中加载失败。
