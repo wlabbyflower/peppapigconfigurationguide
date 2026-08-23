@@ -8,6 +8,9 @@
 
 请先在电脑终端下载 Clash 的 `lpk` 安装包。
 
+
+
+
 [clash.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/releases)
 
 ![image-20251013175802908](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013175802908.png?imageSlim)
@@ -22,21 +25,25 @@
 
 将订阅链接导入应用。默认每 24 小时会尝试更新一次订阅，本地会保留缓存；即使新订阅拉取失败，也不会影响当前已缓存配置的使用。
 
-![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/2/626c33f7-4edb-4fc8-a315-04e917f4ee48.png "image.png")
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823173444634.png)
 
 > 说明：
 >
 > 1. 如果订阅拉取成功但没有节点，可以切换“宽松/严格”模式后重新拉取。
 > 2. 如果订阅拉取失败，可以尝试修改 `UA` 后再次拉取。
 
-### 3.1、手动添加节点信息
+### 3.1、选择导入方式
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823172524757.png)
+点击导入节点池模式，若发现节点池模式无法使用，则重新导入，选择完整模式。
+
+### 3.1.1、手动添加节点信息
 
 > 当前功能仍处于实验阶段。
 
 除了导入订阅链接，也可以手动添加节点信息。
 
-![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/2/c55e10a9-b80b-48dd-87c0-472021a7557b.png "image.png")
-![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/2/8a1db1ba-4dd9-448e-b554-a2333c892bf3.png "image.png")
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823173816181.png)
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823173851537.png)
 
 > 建议优先使用 YAML 格式直接导入。
 
@@ -65,7 +72,7 @@ grpc-opts: null
 
 **注意：需要手动开启 TUN。每次重启应用后，都需要重新开启 TUN。**
 
-![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/2/5a6fd868-0cac-49d7-adc1-2a682d7f66fe.png "image.png")
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823174053428.png)
 
 > 模式说明：
 >
@@ -73,7 +80,7 @@ grpc-opts: null
 > 2. 完整模式：可以为 Google、YouTube 等不同网站分别指定节点。
 > 3. 如无精细化控制需求，建议直接使用默认的简单模式。
 
-![image-20260118225208643](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20260118225208643.png)
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823174204747.png)
 
 ## 5、测试访问
 
@@ -89,7 +96,7 @@ grpc-opts: null
 
 ## 6、自定义添加路由
 
-![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/2/37a9c47b-1548-4ca8-8b2b-4a65bdbf6458.png "image.png")
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823174258103.png)
 
 可以手动控制某些 IP 或域名，强制走代理或直连。
 
