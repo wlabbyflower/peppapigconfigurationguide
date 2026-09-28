@@ -10,7 +10,6 @@ tun-excluded-routes = %APPEND% 6.6.6.6/32, 2000::6666/128
 
 [Rule]
 DOMAIN-SUFFIX,heiyu.space,LC,extended-matching
-DOMAIN-SUFFIX,lazycat.cloud,LC,extended-matching
 
 [MITM]
 hostname = %INSERT% -*.heiyu.space, -lazycat.cloud, -*.lazycat.cloud
