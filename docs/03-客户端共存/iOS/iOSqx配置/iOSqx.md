@@ -31,7 +31,7 @@ http=127.0.0.1:31085,fast-open=false,udp-relay=false,tag=lazycat
 3、找到 `[policy]`
 
 ```
-[policyl
+[policy]
 static=lc,lazycat,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 ```
 
