@@ -3,7 +3,7 @@ function main(config) {
   // ── sniffer ──────────────────────────────────────────────────────────────
   if (!config.sniffer) config.sniffer = {};
 
-  const snifferSkipDomains = ["+heiyu.space", "+lazycat.cloud"];
+  const snifferSkipDomains = ["+.heiyu.space", "+.lazycat.cloud"];
   if (!Array.isArray(config.sniffer["skip-domain"])) {
     config.sniffer["skip-domain"] = [];
   }
@@ -70,7 +70,7 @@ function main(config) {
 
   config.dns["fake-ip-filter-mode"] = "blacklist";
 
-  const fakeIpAdd = ["+heiyu.space", "+lazycat.cloud"];
+  const fakeIpAdd = ["+.heiyu.space", "+.lazycat.cloud"];
   if (!Array.isArray(config.dns["fake-ip-filter"])) {
     config.dns["fake-ip-filter"] = [];
   }
