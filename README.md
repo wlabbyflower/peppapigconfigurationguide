@@ -18,6 +18,8 @@
 [NekoBox 参考视频](./docs/03-客户端共存/Android/Android的猫箱（nekobox）/nekobox.mp4)
 - iOS：
 [小火箭](./docs/03-客户端共存/iOS/iOS小火箭配置/iOS端小火箭与cat配置共存.md) / [Loon](./docs/03-客户端共存/iOS/ios端Loon/Loon配置共存教程.md) / [QX](./docs/03-客户端共存/iOS/iOSqx配置/iOSqx.md) / [Stash（手动）](./docs/03-客户端共存/iOS/iOSstash配置/iOS端stash与cat配置共存.md) / [Stash（Quick）](./docs/03-客户端共存/iOS/iOSstash配置/iOSQuickStash.md) / [Surge](./docs/03-客户端共存/iOS/iOSsurge配置/README.md)
+- iOS 参考视频：
+[小火箭（共存配置）](./docs/03-客户端共存/iOS/iOS小火箭配置/iOS-小火箭.mp4) / [小火箭（域名访问）](./docs/03-客户端共存/iOS/iOS小火箭配置/小火箭开启后可以域名访问.mp4) / [Stash](./docs/03-客户端共存/iOS/iOSstash配置/stash.mp4)
 - macOS：
 [QX](./docs/03-客户端共存/macOS/macos端QX配置/macos端QX配置.md) / [Shadowrocket](./docs/03-客户端共存/macOS/macos端shadowrocket（小火箭）/shadowrocket.md) / [Surge](./docs/03-客户端共存/macOS/macos端surge/surge.md)
 

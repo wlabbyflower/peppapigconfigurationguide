@@ -35,6 +35,12 @@
 - [Stash（Quick）](./03-客户端共存/iOS/iOSstash配置/iOSQuickStash.md)
 - [Surge](./03-客户端共存/iOS/iOSsurge配置/README.md)
 
+#### iOS 参考视频
+
+- [小火箭（共存配置）](./03-客户端共存/iOS/iOS小火箭配置/iOS-小火箭.mp4)
+- [小火箭（域名访问）](./03-客户端共存/iOS/iOS小火箭配置/小火箭开启后可以域名访问.mp4)
+- [Stash](./03-客户端共存/iOS/iOSstash配置/stash.mp4)
+
 ### macOS
 
 - [QX](./03-客户端共存/macOS/macos端QX配置/macos端QX配置.md)
