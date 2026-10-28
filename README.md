@@ -40,3 +40,15 @@
 - 视频使用 Git LFS，克隆后执行：`git lfs install && git lfs pull`
 - 本项目仅供学习交流，请遵守所在地法律法规。
 - 完整文档索引：[docs/README.md](./docs/README.md)
+
+## Star History
+
+<p align="center">
+  <a href="https://www.star-history.com/?repos=wlabbyflower%2Fpeppapigconfigurationguide&type=date&legend=top-left">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&theme=dark&legend=top-left" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&legend=top-left" />
+      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&legend=top-left" />
+    </picture>
+  </a>
+</p>
