@@ -1,54 +1,42 @@
 # 小猪佩奇配置指南
 
-本仓库用于整理懒猫微服（cat）相关代理配置教程，覆盖微服内代理部署、局域网共享代理、以及与常见客户端的共存配置。
+懒猫微服（cat）代理配置教程：**装代理、共享给局域网、和常见代理客户端共存**。
 
-## 快速入口
+## 一、微服装代理（二选一）
 
-### 1) 微服内代理部署
-- [PeppaPig（v2raya）部署指南](./docs/01-微服内代理部署/PeppaPigConfigurationGuide/PeppaPigConfigurationGuide.md)
-- [Clash 部署教程](./docs/01-微服内代理部署/PeppaPigConfigurationGuide/clash部署教程.md)
+| 方案 | 适合 | 教程 |
+| --- | --- | --- |
+| PeppaPig（v2rayA） | 图形界面，导入节点就能用 | [点这里](./docs/01-微服内代理部署/PeppaPig/README.md) |
+| Clash | 需要 TUN、订阅、分流、链式代理 | [点这里](./docs/01-微服内代理部署/Clash/README.md) |
 
-### 2) 局域网共享代理
-- [构建内网代理（同 LAN 设备可访问）](./docs/02-局域网代理共享/构建内网代理方法：配置代理为微服所在局域网可访问.md)
+> 两个不要同时开。开启「自动连接」前，先确认 SSH 能用。
 
-### 3) 客户端共存配置
-- 跨平台：
-[Clash-verge](./docs/03-客户端共存/cross-platform/clash/clashverge.md) / [Sing-box](./docs/03-客户端共存/cross-platform/singbox/singbox.json配置.md) / [v2ray 系列](./docs/03-客户端共存/cross-platform/v2ray系列/v2ray系列.md) / [Hiddify](./docs/03-客户端共存/cross-platform/Hiddify/Hiddify.md) / [FlClash](./docs/03-客户端共存/cross-platform/Flclash/Flclash.md) / [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/ClashMi.md) /
-- Android：
-[NekoBox 参考视频](./docs/03-客户端共存/Android/Android的猫箱（nekobox）/nekobox.mp4)
-- iOS：
-[小火箭](./docs/03-客户端共存/iOS/iOS小火箭配置/iOS端小火箭与cat配置共存.md) / [Loon](./docs/03-客户端共存/iOS/ios端Loon/Loon配置共存教程.md) / [QX](./docs/03-客户端共存/iOS/iOSqx配置/iOSqx.md) / [Stash（手动）](./docs/03-客户端共存/iOS/iOSstash配置/iOS端stash与cat配置共存.md) / [Stash（Quick）](./docs/03-客户端共存/iOS/iOSstash配置/iOSQuickStash.md) / [Surge](./docs/03-客户端共存/iOS/iOSsurge配置/README.md)
-- iOS 参考视频：
-[小火箭（共存配置）](./docs/03-客户端共存/iOS/iOS小火箭配置/iOS-小火箭.mp4) / [小火箭（域名访问）](./docs/03-客户端共存/iOS/iOS小火箭配置/小火箭开启后可以域名访问.mp4) / [Stash](./docs/03-客户端共存/iOS/iOSstash配置/stash.mp4)
-- macOS：
-[QX](./docs/03-客户端共存/macOS/macos端QX配置/macos端QX配置.md) / [Shadowrocket](./docs/03-客户端共存/macOS/macos端shadowrocket（小火箭）/shadowrocket.md) / [Surge](./docs/03-客户端共存/macOS/macos端surge/surge.md)
+## 二、局域网设备也想用
 
-## 目录结构（已优化）
+微服代理跑通后，按下面配置端口分享和转发：
 
-```text
-docs/
-  01-微服内代理部署/
-  02-局域网代理共享/
-  03-客户端共存/
-    Android/
-    iOS/
-    macOS/
-    cross-platform/
-```
+[局域网代理共享 →](./docs/02-局域网代理共享/README.md)
+
+## 三、客户端共存（开了代理打不开微服，看这里）
+
+| 平台 | 点对应的客户端 |
+| --- | --- |
+| iOS | [小火箭](./docs/03-客户端共存/iOS/Shadowrocket/README.md) · [Loon](./docs/03-客户端共存/iOS/Loon/README.md) · [Quantumult X](./docs/03-客户端共存/iOS/QuantumultX/README.md) · [Stash](./docs/03-客户端共存/iOS/Stash/README.md) · [Surge](./docs/03-客户端共存/iOS/Surge/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) |
+| Android | [NekoBox（视频）](./docs/03-客户端共存/Android/NekoBox/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) · [FlClash](./docs/03-客户端共存/cross-platform/FlClash/README.md) |
+| macOS | [小火箭](./docs/03-客户端共存/macOS/Shadowrocket/README.md) · [Surge](./docs/03-客户端共存/macOS/Surge/README.md) · [Quantumult X](./docs/03-客户端共存/macOS/QuantumultX/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) · [FlClash](./docs/03-客户端共存/cross-platform/FlClash/README.md) |
+| Windows | [Clash Verge](./docs/03-客户端共存/cross-platform/ClashVerge/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) · [FlClash](./docs/03-客户端共存/cross-platform/FlClash/README.md) · [Hiddify](./docs/03-客户端共存/cross-platform/Hiddify/README.md) · [v2rayN](./docs/03-客户端共存/cross-platform/v2ray/README.md) |
+| 跨平台 | [sing-box](./docs/03-客户端共存/cross-platform/sing-box/README.md) · [v2rayN / v2rayA](./docs/03-客户端共存/cross-platform/v2ray/README.md) · [Hiddify](./docs/03-客户端共存/cross-platform/Hiddify/README.md) |
+
+## 共存只改三处
+
+1. 微服客户端切 **Proxy** 模式，然后杀掉后台重新打开。
+2. 代理客户端加本地节点：`socks5 127.0.0.1:31086` 或 `http 127.0.0.1:31085`。
+3. 微服域名走本地节点 / 直连，`6.6.6.6/32`、`2000::6666/128` 绕过代理，开启 IPv6。
+
+端口以微服客户端「网络模式」页面显示为准。详细步骤点上面的客户端教程。
 
 ## 说明
 
-- 本次结构优化仅调整目录与文档链接，未修改教程中的配置代码内容。
-- iOS 端与原 VPN 可能冲突，建议优先使用 cat 的 `Proxy` 模式并按教程配置绕过路由。
-
-## Star History
-
-<p align="center">
-  <a href="https://www.star-history.com/?repos=wlabbyflower%2Fpeppapigconfigurationguide&type=date&legend=top-left">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&theme=dark&legend=top-left" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&legend=top-left" />
-      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=wlabbyflower/peppapigconfigurationguide&type=date&legend=top-left" />
-    </picture>
-  </a>
-</p>
+- 视频使用 Git LFS，克隆后执行：`git lfs install && git lfs pull`
+- 本项目仅供学习交流，请遵守所在地法律法规。
+- 完整文档索引：[docs/README.md](./docs/README.md)

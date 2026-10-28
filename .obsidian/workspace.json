@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01-微服内代理部署/PeppaPigConfigurationGuide/clash部署教程.md",
+                "file": "docs/01-微服内代理部署/Clash/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "clash部署教程"
+              "title": "Clash 部署教程"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/01-微服内代理部署/PeppaPigConfigurationGuide/clash部署教程.md",
+                "file": "docs/01-微服内代理部署/Clash/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/01-微服内代理部署/PeppaPigConfigurationGuide/clash部署教程.md",
+                "file": "docs/01-微服内代理部署/Clash/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/01-微服内代理部署/PeppaPigConfigurationGuide/clash部署教程.md",
+                "file": "docs/01-微服内代理部署/Clash/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -193,8 +193,8 @@
     "Pasted image 20260823173434.png",
     "Pasted image 20260823172403.png",
     "Pasted image 20260823172401.png",
-    "docs/01-微服内代理部署/PeppaPigConfigurationGuide/clash部署教程-更新日志.md",
-    "docs/01-微服内代理部署/PeppaPigConfigurationGuide/clash部署教程.md",
+    "docs/01-微服内代理部署/Clash/CHANGELOG.md",
+    "docs/01-微服内代理部署/Clash/README.md",
     "README.md"
   ]
 }

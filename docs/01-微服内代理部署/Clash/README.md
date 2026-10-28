@@ -1,0 +1,121 @@
+# Clash 部署教程
+
+> 返回：[微服内代理部署](../README.md) · [文档索引](../../README.md)
+
+Clash 应用适合需要 TUN、订阅管理和精细分流的场景。按本文完成安装、导入订阅、选择节点并验证代理。
+
+> 历史版本的更新记录见 [CHANGELOG](./CHANGELOG.md#clash-change-log)。
+
+## 1、下载 Clash 应用
+
+请先在电脑终端下载 Clash 的 `lpk` 安装包。
+
+
+
+
+[clash.lpk](https://github.com/wlabbyflower/peppapigconfigurationguide/releases)
+
+![image-20251013175802908](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013175802908.png?imageSlim)
+
+## 2、安装软件
+
+将下载好的 `lpk` 文件拖入懒猫网盘，双击打开后按提示安装应用。
+
+![image-20251013180050285](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013180050285.png?imageSlim)
+
+## 3、导入订阅
+
+将订阅链接导入应用。默认每 24 小时会尝试更新一次订阅，本地会保留缓存；即使新订阅拉取失败，也不会影响当前已缓存配置的使用。
+
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823173444634.png)
+
+> 说明：
+>
+> 1. 如果订阅拉取成功但没有节点，可以切换“宽松/严格”模式后重新拉取。
+> 2. 如果订阅拉取失败，可以尝试修改 `UA` 后再次拉取。
+
+### 3.1、选择导入方式
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823172524757.png)
+点击导入节点池模式，若发现节点池模式无法使用，则重新导入，选择完整模式。
+
+### 3.1.1、手动添加节点信息
+
+> 当前功能仍处于实验阶段。
+
+除了导入订阅链接，也可以手动添加节点信息。
+
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823173816181.png)
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823173851537.png)
+
+> 建议优先使用 YAML 格式直接导入。
+
+参考格式如下：
+
+```yaml
+name: "xxx"
+type: xxx
+server: xxx
+port: xxx
+uuid: xxx
+alterId: 0
+cipher: auto
+udp: true
+tls: false
+skip-cert-verify: false
+servername: ""
+network: tcp
+ws-opts: null
+h2-opts: null
+http-opts: null
+grpc-opts: null
+```
+
+## 4、进入应用并选择节点
+
+**注意：需要手动开启 TUN。每次重启应用后，都需要重新开启 TUN。**
+
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823174053428.png)
+
+> 模式说明：
+>
+> 1. 简单模式：只需要关注当前代理使用的是哪个节点，默认即为该模式。
+> 2. 完整模式：可以为 Google、YouTube 等不同网站分别指定节点。
+> 3. 如无精细化控制需求，建议直接使用默认的简单模式。
+
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823174204747.png)
+
+## 5、测试访问
+
+可以通过以下方式验证代理是否生效。
+
+### 5.1、SSH 到微服访问 Google
+
+![image-20251013181237775](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013181237775.png?imageSlim)
+
+### 5.2、在即时通讯多合一中访问 YouTube
+
+![image-20251013181402321](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/395/image-20251013181402321.png?imageSlim)
+
+## 6、自定义添加路由
+
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260823174258103.png)
+
+可以手动控制某些 IP 或域名，强制走代理或直连。
+
+## 7、链式代理 (1.21.7支持)
+
+> 目前只支持手动添加的节点做链式代理
+
+1. 手动添加节点。
+   ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/a4a706a1-3310-4447-85a0-54c38085687a.png "image.png")
+2. 创建链式代理节点。
+   ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/3f2d1a52-8bee-40ac-922d-a7aebfbfcbb9.png "image.png")
+3. 使用链式代理节点。可以指定某一个分组使用链式代理，也可以指定所有的都走链式代理。
+   ![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/f4e6af64-66e6-46dd-b250-d3684cc8c5d5.png "image.png")
+
+目前创建的所有链式代理节点可以在链式代理分组中看到
+![image.png](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/439/8eb6bffe-5007-475b-9df7-29a0eea4b897.png "image.png")
+
+---
+
+返回：[微服内代理部署](../README.md) · [02 局域网代理共享](../../02-局域网代理共享/README.md) · [文档索引](../../README.md)
