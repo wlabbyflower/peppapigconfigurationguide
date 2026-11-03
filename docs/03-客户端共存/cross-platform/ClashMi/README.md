@@ -42,7 +42,8 @@ https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/h
 
 我的页面-网络模式 > 选择Proxy模式 > 重启客户端（杀掉后台）
 
-<img src="https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/20260601163212705.png"/>
+
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE33.png)
 
 
 
@@ -96,7 +97,7 @@ clashmi版本大于1.0.24.1006
 
 我的页面-网络模式 > 选择Proxy模式 > 重启客户端（杀掉后台）
 
-![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/ios1.png)
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/ios.png)
 
 添加覆写脚本
 

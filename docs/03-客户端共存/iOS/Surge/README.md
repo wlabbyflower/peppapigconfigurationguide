@@ -126,7 +126,7 @@ https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/h
 
 **切换后，从后台完全关闭懒猫微服客户端，再重新打开，使网络模式生效。**
 
-<img src="https://files.mdnice.com/user/158113/98831ba6-454f-4d7a-af68-e721e94eeb4a.png" alt="懒猫微服网络模式：选择 Proxy，HTTP 端口 31085，Socks 端口 31086；修改后需重启客户端" width="320" />
+![](https://lzc-playground-1301583638.cos.ap-chengdu.myqcloud.com/guidelines/1369/ios.png)
 
 ### 3. 验证共存访问
 
@@ -134,9 +134,6 @@ https://raw.githubusercontent.com/wlabbyflower/peppapigconfigurationguide/refs/h
 
 > 从中继升级为直连可先等待约 3–5 秒，实际以连接状态为准。
 
-以下为懒猫微服客户端与浏览器同时运行的多任务界面示例：
-
-<img src="https://files.mdnice.com/user/158113/eec256ea-c894-40ee-ba1f-c7a14c051c9a.png" alt="iOS 多任务界面：懒猫微服客户端与浏览器同时运行" width="320" />
 
 ---
 
