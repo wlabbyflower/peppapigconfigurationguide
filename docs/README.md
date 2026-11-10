@@ -63,6 +63,7 @@
 | Stash | 覆写配置（推荐）或手动配置 | [Stash](./03-客户端共存/iOS/Stash/README.md) |
 | Surge | 懒人配置（推荐）或模块配置 | [Surge](./03-客户端共存/iOS/Surge/README.md) |
 | ClashMi | 覆写脚本（iOS 1.0.24.1006+） | [ClashMi](./03-客户端共存/cross-platform/ClashMi/README.md) |
+| Clash（clash.md） | 覆写脚本 | [Clash Apple](./03-客户端共存/cross-platform/Clash-Apple/README.md) |
 
 ### macOS
 
@@ -73,6 +74,7 @@
 | Quantumult X | 规则分流 + 兼容性增强 | [Quantumult X](./03-客户端共存/macOS/QuantumultX/README.md) |
 | ClashMi | 覆写脚本 | [ClashMi](./03-客户端共存/cross-platform/ClashMi/README.md) |
 | FlClash | 覆写脚本 | [FlClash](./03-客户端共存/cross-platform/FlClash/README.md) |
+| Clash（clash.md） | 覆写脚本（默认方案及双 TUN 实验方案） | [Clash Apple](./03-客户端共存/cross-platform/Clash-Apple/README.md) |
 
 ### 跨平台
 
@@ -106,6 +108,8 @@
 | --- | --- | --- |
 | `PeppaPig.lpk` | PeppaPig 安装包 | [01-微服内代理部署/PeppaPig](./01-微服内代理部署/PeppaPig/PeppaPig.lpk) |
 | `clashmi.js` | ClashMi 覆写脚本 | [cross-platform/ClashMi](./03-客户端共存/cross-platform/ClashMi/clashmi.js) |
+| `lazycat_override.js` | Clash（clash.md）Apple 默认覆写脚本 | [cross-platform/Clash-Apple](./03-客户端共存/cross-platform/Clash-Apple/lazycat_override.js) |
+| `lazycat_override_macos_dual_tun.js` | Clash（clash.md）macOS 双 TUN 实验脚本 | [cross-platform/Clash-Apple](./03-客户端共存/cross-platform/Clash-Apple/lazycat_override_macos_dual_tun.js) |
 | `flclash.js` | FlClash 覆写脚本 | [cross-platform/FlClash](./03-客户端共存/cross-platform/FlClash/flclash.js) |
 | `lzc.stash` | Stash 覆写配置 | [iOS/Stash](./03-客户端共存/iOS/Stash/lzc.stash) |
 | `Surge.conf` | iOS Surge 完整配置 | [iOS/Surge](./03-客户端共存/iOS/Surge/Surge.conf) |

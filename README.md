@@ -21,9 +21,9 @@
 
 | 平台 | 点对应的客户端 |
 | --- | --- |
-| iOS | [小火箭](./docs/03-客户端共存/iOS/Shadowrocket/README.md) · [Loon](./docs/03-客户端共存/iOS/Loon/README.md) · [Quantumult X](./docs/03-客户端共存/iOS/QuantumultX/README.md) · [Stash](./docs/03-客户端共存/iOS/Stash/README.md) · [Surge](./docs/03-客户端共存/iOS/Surge/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) |
+| iOS | [小火箭](./docs/03-客户端共存/iOS/Shadowrocket/README.md) · [Loon](./docs/03-客户端共存/iOS/Loon/README.md) · [Quantumult X](./docs/03-客户端共存/iOS/QuantumultX/README.md) · [Stash](./docs/03-客户端共存/iOS/Stash/README.md) · [Surge](./docs/03-客户端共存/iOS/Surge/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) · [Clash（clash.md）](./docs/03-客户端共存/cross-platform/Clash-Apple/README.md) |
 | Android | [NekoBox（视频）](./docs/03-客户端共存/Android/NekoBox/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) · [FlClash](./docs/03-客户端共存/cross-platform/FlClash/README.md) |
-| macOS | [小火箭](./docs/03-客户端共存/macOS/Shadowrocket/README.md) · [Surge](./docs/03-客户端共存/macOS/Surge/README.md) · [Quantumult X](./docs/03-客户端共存/macOS/QuantumultX/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) · [FlClash](./docs/03-客户端共存/cross-platform/FlClash/README.md) |
+| macOS | [小火箭](./docs/03-客户端共存/macOS/Shadowrocket/README.md) · [Surge](./docs/03-客户端共存/macOS/Surge/README.md) · [Quantumult X](./docs/03-客户端共存/macOS/QuantumultX/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) · [FlClash](./docs/03-客户端共存/cross-platform/FlClash/README.md) · [Clash（clash.md）](./docs/03-客户端共存/cross-platform/Clash-Apple/README.md) |
 | Windows | [Clash Verge](./docs/03-客户端共存/cross-platform/ClashVerge/README.md) · [ClashMi](./docs/03-客户端共存/cross-platform/ClashMi/README.md) · [FlClash](./docs/03-客户端共存/cross-platform/FlClash/README.md) · [Hiddify](./docs/03-客户端共存/cross-platform/Hiddify/README.md) · [v2rayN](./docs/03-客户端共存/cross-platform/v2ray/README.md) |
 | 跨平台 | [sing-box](./docs/03-客户端共存/cross-platform/sing-box/README.md) · [v2rayN / v2rayA](./docs/03-客户端共存/cross-platform/v2ray/README.md) · [Hiddify](./docs/03-客户端共存/cross-platform/Hiddify/README.md) |
 
